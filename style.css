@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: auto;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    
+   
+}
+.logo{
+   font-weight: bold;
+}
+.lists{
+    /* width: 100%; */
+    /* border: 2px solid pink; */
+   
+
+}
+.lists ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    /* text-decoration: none;
+    list-style: none; */
+    /* border: 2px solid red; */
+    color: rgb(83, 80, 80);
+}
+.lists ul li {
+    margin-right: 15px;
+    list-style: none;
+    
+}
+.lists ul li a{
+    text-decoration: none;
+    color: rgb(87, 85, 85);
+}
+.btns{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.btns button{
+    height: 30px;
+    width: 90px;
+    border-radius:5px ;
+    margin-right: 5px;
+    
+}
+.btn-2{
+    background-color: black;
+    color: white;
+    
+}
+
+
+
+.hero_section{
+    height: auto;
+    width: 100%;
+    background-color: rgb(250, 246, 246);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.hero_section h5{
+    color: rgb(66, 66, 131);
+    font-size: 20px;
+}
+.hero_section h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-block: 20px;
+    font-weight: 16px;
+    
+
+}
+.hero_section p{
+    text-align: center;
+}
+.hero_button{
+    /* border: 2px solid red; */
+    height: 40px;
+    width: 350px;
+    margin-block: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_button button{
+    height: 40px;
+    width: 140px;
+    border-radius: 5px;
+    margin-right: 10px;
+    /* border: none; */
+    border: 1px solid gray;
+    /* font-weight: 30px; */
+    font-weight: 800;
+    
+}
+.btn-1{
+    background-color: black;
+    color: white;
+    font-weight: 30px;
+}
+
+
+.card_section{
+    height: auto;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.card{
+   height: 300px;
+   width: 360px;
+   /* background-color: aliceblue; */
+   padding: 10px;
+   margin: 10px;
+   border: 1px solid rgb(175, 171, 171);
+   border-radius: 5px;
+
+  
+}
+.card_inner1{
+    height: 130px;
+    width: 100%;
+    background-color: rgb(228, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_inner1 img{
+    height: 60px;
+    width: 60px;
+    /* border: 2px solid red; */
+    border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.card_section h2{
+    margin-block: 15px;
+}
+
+
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    nav ul li{
+        display: none;
+    }
+    .hero_section h1{
+        font-size: 30px;
+    }
+    .hero_section p{
+        font-size: 12px;
+    }
+    .hero_section{
+        padding-block: 20px;
+    }
+}
